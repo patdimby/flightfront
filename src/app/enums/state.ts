@@ -1,0 +1,5 @@
+enum State
+{
+    Active,
+    Inactive
+}
