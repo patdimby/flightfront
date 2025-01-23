@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { SearchFormComponent } from "./components/search-form/search-form.component";
+import { SharedModule } from './shared/shared.module';
+
 
 @Component({
+  standalone: true,  
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  imports: [SearchFormComponent, SharedModule],
 })
-export class AppComponent {
-  title = 'flightfront';
+export class AppComponent { 
+  title = 'Hello World!';
 }
